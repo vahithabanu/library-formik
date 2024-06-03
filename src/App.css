@@ -1,38 +1,165 @@
+/*.App {
+    text-align: center;
+    background-color: aquamarine;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: aqua;
+  }
+  
+  form {
+    margin: 20px;
+  }
+  
+  div {
+    margin: 10px;
+  }*/
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Form Styles */
+form {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+div.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-right: 10px;
+}
+
+ul li button:hover {
+  background-color: #e60000;
+  margin-right: 10px;
+}
+
+/*ul li button.edit {
+  background-color: #4CAF50;
+}
+
+ul li button.edit:hover {
+  background-color: #45a049;
+}*/
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  main {
+    padding: 10px;
   }
 }
+
